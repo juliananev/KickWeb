@@ -4,6 +4,9 @@
         url('fonts/hollyweird_std_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    
+    font-family: "Tipemite";
+    src: url('fonts/Tipemite.ttf') format('ttf');
 
 }
 
