@@ -1,0 +1,354 @@
+@font-face {
+  font-family: "sangbleu";
+  src: url("/fonts/SangBleuKingdom-Bold.woff") format("woff");
+
+}
+
+.flex-container-small {
+  display: none
+}
+
+
+
+.banner1 {
+  width: 112vw;
+  height: 5vw;
+  margin-left: -10vw;
+  margin-top: 50vw;
+  text-align: left;
+  background-color: black;
+  transform: rotate(-10deg);
+  position: absolute;
+  z-index: 7;
+}
+
+.banner2 {
+  width: 112vw;
+  height: 5vw;
+  margin-left: -10vw;
+  margin-top: 164vw;
+  text-align: left;
+  background-color: black;
+  transform: rotate(10deg);
+  position: absolute;
+  z-index: 7;
+}
+
+
+.banners p {
+  color: white;
+  font-family: 'Special Elite';
+  margin-top: 1.7vw;
+  font-size: 2vw;
+}
+
+
+.feature p {
+  position: fixed;
+  font-size: 3.5vw;
+  text-align: center;
+  font-family: 'Kenia';
+  color: white;
+  background-color: black;
+  padding-top: 1vw;
+  height: 26vw;
+  width: 5vw;
+  line-height: 3.7vw;
+  margin-top: -40vw;
+  margin-left: -2.5vw;
+  border-radius: 100px;
+}
+
+
+
+.flex-container-big {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 3vw;
+  margin-bottom: 2vw;
+  background-color: white;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.flex-container-big>.feature {
+  background-color: white;
+}
+
+.flex-container-big>.bg {
+  background-color: white;
+}
+
+.flex-container-big>div {
+
+  background-color: #e2e2e2;
+  padding: 5vw;
+  font-size: 2vw;
+  line-height: 3.5vw;
+}
+
+.flex-container-2 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  height: 50vw;
+  margin-top: 6vw;
+  margin-right: 3vw;
+  background-color: white;
+  justify-content: flex-end;
+  align-items: stretch;
+  z-index: 5;
+
+}
+
+.flex-container-3 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  height: 20vw;
+  margin-top: -9vw;
+  margin-right: 3vw;
+  background-color: white;
+  justify-content: flex-end;
+  align-items: stretch;
+  z-index: 4;
+
+}
+
+.flex-container-2>div {
+  display: flex;
+  width: 1vw;
+  padding-left: 50.2vw;
+  padding-right: 10vw;
+  background-color: #e2e2e2;
+  justify-content: flex-end;
+  align-items: stretch;
+
+}
+
+
+li {
+  position: relative;
+  z-index: 6;
+}
+
+.text2 li {
+  margin-top: 5vw;
+
+}
+
+.text3 li {
+  margin-top: 10vw;
+}
+
+
+li {
+  list-style-type: none;
+  text-align: left;
+  font-family: 'Special Elite';
+
+}
+
+.title {
+  position: absolute;
+  margin-left: 3vw;
+  margin-top: 7vw;
+  z-index: 6;
+  
+}
+
+.title h1 {
+  font-family: 'Gloock', serif;
+  font-size: 8vw;
+  letter-spacing: 1vw;
+  margin-bottom: -2vw;
+  color: red;
+}
+
+.title p {
+  font-family: 'Special Elite';
+  font-size: 2.8vw;
+  color: red;
+  line-height: 3vw;
+}
+
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#hamnav {
+  width: 101vw;
+  position: relative;
+  background: red;
+  z-index: 2;
+  margin-top: -1vw;
+  margin-left: -1vw;
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems {
+  display: flex;
+}
+
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: white;
+margin-top: 1vw;
+  font-family: 'Special Elite';
+  text-decoration: none;
+  font-size: 2vw;
+  text-align: center;
+  z-index: 2;
+}
+
+#hamitems a:hover {
+  background: black;
+  z-index: 2;
+}
+
+/* (C) HIDE HAMBURGER */
+#hamnav label,
+#hamburger,
+#versions {
+  display: none;
+  z-index: 2;
+}
+
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamnav {
+    
+    margin-top: -2vw;
+    margin-left: -1.5vw;
+    
+
+  }
+
+  #hamitems a {
+    
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    font-size: 4vw;
+    border-top: 1px solid white;
+  }
+
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label {
+    display: inline-block;
+    color: white;
+    background: red;
+    font-style: normal;
+    font-size: 7vw;
+    padding: 1.4vw;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems {
+    
+    display: none;
+  }
+
+  #hamnav input:checked~#hamitems {
+    
+    display: block;
+  }
+
+  .flex-container-big {
+    display: none
+  }
+
+  .flex-container-3 {
+    display: none
+  }
+
+  .flex-container-small>.feature {
+    background-color: white;
+  }
+
+  .feature p {
+
+    font-size: 5vw;
+
+    line-height: 5.7vw;
+
+    height: 40vw;
+    width: 7vw;
+
+    margin-top: -45vw;
+    margin-left: -4vw;
+
+  }
+
+  .flex-container-small {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 3vw;
+    margin-bottom: 2vw;
+    background-color: white;
+    justify-content: flex-end;
+    align-items: stretch;
+
+  }
+
+
+  .flex-container-small>div {
+
+    background-color: #e2e2e2;
+    padding: 7.3vw;
+    font-size: 3vw;
+    line-height: 5.5vw;
+  }
+
+  .flex-container-2>div {
+    padding-left: 49.5vw;
+  }
+
+  .text2 li {
+    margin-top: 0vw;
+  }
+
+  .title h1 {
+
+    font-size: 8vw;
+    line-height: 9vw;
+    margin-bottom: -2vw;
+    color: red;
+  }
+  .title p {
+    
+    font-size: 3.2vw;
+    line-height: 4vw;
+    
+  }
+  .banner1,
+  .banner2 {
+
+    height: 7vw;
+
+  }
+
+  .banner2 {
+    margin-top: 300vw;
+  }
+
+  .banners p {
+
+    margin-top: 2.5vw;
+    font-size: 2vw;
+
+  }
+
+  .flex-container-2>.image-devil {
+    margin-top: 130vw;
+
+  }
+
+  .flex-container-small>.bg {
+    background-color: white;
+  }
+
+}
