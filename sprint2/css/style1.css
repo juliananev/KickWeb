@@ -50,7 +50,7 @@
   height: 26vw;
   width: 5vw;
   line-height: 3.7vw;
-  margin-top: -40vw;
+  margin-top: -30vw;
   margin-left: -2.5vw;
   border-radius: 100px;
 }
@@ -101,7 +101,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  height: 20vw;
+  height: 27vw;
   margin-top: -9vw;
   margin-right: 3vw;
   background-color: white;
