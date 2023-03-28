@@ -5,9 +5,13 @@
     font-weight: normal;
     font-style: normal;
     
-    font-family: "tipemite";
-    src: url('/fonts/tipemite.ttf') format('ttf');
+   
 
+}
+
+@font-face {
+    font-family: "tipemite";
+    src: url('fonts/tipemite.ttf') format('ttf');
 }
 
 
@@ -90,7 +94,7 @@ ul {
     color: #6c27a1;
     -webkit-text-stroke: 15px #ff6a00;
     position: absolute;
-    font-family: Hollyweird Std;
+    font-family: 'hollyweird_stdregular';
     line-height: 0.8;
     font-size: 9vw;
     margin-top: 15.7vw;
