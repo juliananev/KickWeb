@@ -4,14 +4,13 @@
         url('fonts/hollyweird_std_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
-
-}
-
-@font-face {
+    
     font-family: "tipemite";
     src: url('/fonts/tipemite.ttf') format('ttf');
+
 }
+
+
 
 
 body {
