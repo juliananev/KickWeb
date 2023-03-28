@@ -6,9 +6,13 @@
     font-style: normal;
 
 
+}
+
+@font-face {
     font-family: "tipemite";
     src: url('fonts/tipemite.ttf') format('ttf');
 }
+
 
 body {
     margin: 0px;
