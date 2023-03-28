@@ -5,10 +5,14 @@
     font-weight: normal;
     font-style: normal;
     
-    font-family: "Tipemite";
-    src: url('fonts/Tipemite.ttf') format('ttf');
+ 
 
 }
+@font-face {
+    
+    font-family: "Tipemite";
+    src: url('fonts/Tipemite.ttf') format('ttf');}
+
 
 body {
     margin: 0px;
