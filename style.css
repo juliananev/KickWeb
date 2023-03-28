@@ -1,0 +1,90 @@
+body{
+    background-color: black;
+}
+
+
+
+
+.titel li{
+    color: white;
+    font-family: "ClimateCrisis-Regular";
+    letter-spacing: 0.5vw;
+    font-size: 5vw;
+    margin-left: 7vw;
+    margin-top: 10vw;
+    margin-bottom: 3vw;
+    list-style-type: none;
+    text-align: left;
+    
+}
+.untertitel li{
+    color: white;
+    font-family: "Euclid Square";
+    font-size: 3w;
+    margin-right: 4vw;
+    margin-left: 7vw;
+    margin-top: -10vw;
+    list-style-type: none;
+    text-align: left;
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+    
+}
+
+.s ul{
+    margin-top: 7vw;
+}
+
+.sprint li{
+    
+    font-family: "ClimateCrisis-Regular";
+    font-size: 4vw;
+    letter-spacing: 0.5vw;
+    margin-right: 5vw;
+    margin-bottom: 2vw;
+    list-style-type: none;
+    text-align: center;
+    
+}
+a{
+    text-decoration: none;
+}
+
+
+.color1 a:link, a:visited {
+    background-color:red;
+    color: black;
+    padding: 1vw 24vw;
+    border-radius: 20px;
+    display: inline-block;
+    width: 32vw;
+}
+
+.color2 a:link, a:visited {
+    background-color:red;
+    color: black;
+    padding: 1vw 24vw;
+    border-radius: 20px;
+    width: 32vw;
+    display: inline-block;
+}
+
+.color3 a:link, a:visited {
+    background-color:red;
+    color: black;
+    padding: 1vw 24vw;
+    border-radius: 20px;
+    width: 32vw;
+    display: inline-block;
+}
+
+
+.color1 a:hover{
+    background-image: linear-gradient(#ffffff, #ffffff);
+}
+.color2 a:hover{
+    background-image: linear-gradient(#ffffff, #ffffff);
+}
+.color3 a:hover{
+    background-image: linear-gradient(#ffffff, #ffffff);
+}
