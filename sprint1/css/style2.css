@@ -17,6 +17,14 @@
      font-family: "ClimateCrisis-Regular";
     src: url('fonts/ClimateCrisis-Regular.woff2') format('woff2');
 }
+@font-face {
+     font-family: "RubikBubbles-Regular";
+    src: url('fonts/RubikBubbles-Regular.woff2') format('woff2');
+}
+@font-face {
+     font-family: "Runic-MT-Condensed";
+    src: url('fonts/Runic-MT-Condensed.woff2') format('woff2');
+}
 
 
 
@@ -45,7 +53,7 @@ ul {
 
 .first li {
     color: white;
-    font-family: "Runic MT Condensed";
+    font-family: "Runic-MT-Condensed";
     position: absolute;
     font-size: 6vw;
     margin-left: 28vw;
