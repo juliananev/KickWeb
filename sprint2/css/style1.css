@@ -1,8 +1,4 @@
-@font-face {
-  font-family: "sangbleu";
-  src: url("/fonts/SangBleuKingdom-Bold.woff") format("woff");
 
-}
 
 .flex-container-small {
   display: none
@@ -193,9 +189,10 @@ li {
   flex-basis: 0;
   padding: 10px;
   color: white;
-margin-top: 1vw;
+
   font-family: 'Special Elite';
   text-decoration: none;
+  padding-top: 1.5vw;
   font-size: 2vw;
   text-align: center;
   z-index: 2;
@@ -222,7 +219,7 @@ margin-top: 1vw;
   #hamnav {
     
     margin-top: -2vw;
-    margin-left: -1.5vw;
+    margin-left: -2vw;
     
 
   }
@@ -238,6 +235,7 @@ margin-top: 1vw;
 
   /* (B) SHOW HAMBURGER ICON */
   #hamnav label {
+    
     display: inline-block;
     color: white;
     background: red;
