@@ -11,8 +11,8 @@ body{
     letter-spacing: 0.5vw;
     font-size: 5vw;
     margin-left: 7vw;
-    margin-top: 10vw;
-    margin-bottom: 3vw;
+    margin-top: 0vw;
+    margin-bottom: -5vw;
     list-style-type: none;
     text-align: left;
     
@@ -20,10 +20,11 @@ body{
 .untertitel li{
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: 3w;
+    font-size: 1.7vw;
     margin-right: 4vw;
     margin-left: 7vw;
-    margin-top: -10vw;
+    margin-bottom: -2vw;
+    margin-top: 10vw;
     list-style-type: none;
     text-align: left;
     letter-spacing: 0.2vw;

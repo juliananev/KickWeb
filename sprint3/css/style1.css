@@ -1,32 +1,47 @@
 @font-face {
   font-family: "sangbleu";
   src: url("/fonts/SangBleuKingdom-Bold.woff") format("woff");
+}
 
+body{
+  background-color: black;
 }
 
 .flex-container-small {
   display: none
 }
 
-
+.banner{
+  overflow: hidden;
+  position: absolute;
+  
+  width: 100.7vw;
+  margin-left: -0.7vw;
+  height: 178vw;
+}
 
 .banner1 {
-  width: 112vw;
+  overflow: hidden;
+    position: relative;
+  
+  width: 350vw;
   height: 5vw;
   margin-left: -10vw;
-  margin-top: 50vw;
+  margin-top: 30vw;
   text-align: left;
   background-color: black;
   transform: rotate(-10deg);
-  position: absolute;
+ 
   z-index: 7;
+  
 }
 
+
 .banner2 {
-  width: 112vw;
+  width: 350vw;
   height: 5vw;
   margin-left: -10vw;
-  margin-top: 164vw;
+  margin-top: 150vw;
   text-align: left;
   background-color: black;
   transform: rotate(10deg);
@@ -35,53 +50,82 @@
 }
 
 
-.banners p {
+.banner p {
   color: white;
-  font-family: 'Special Elite';
-  margin-top: 1.7vw;
+  font-family: 'Climate Crisis';
+  font-weight: 100;
+  margin-top: 1.2vw;
   font-size: 2vw;
+  animation: move-left-to-right linear 40s infinite;
+}
+
+@keyframes move-left-to-right {
+  from {
+      transform: translateX(-50%);
+  }
+  to {
+      transform: translateX(0);
+  }
 }
 
 
 .feature p {
   position: fixed;
-  font-size: 3.5vw;
+  font-size: 3vw;
   text-align: center;
-  font-family: 'Kenia';
+  font-family: 'Climate Crisis';
+  font-weight: 100;
+  
   color: white;
-  background-color: black;
-  padding-top: 1vw;
-  height: 26vw;
-  width: 5vw;
-  line-height: 3.7vw;
-  margin-top: -40vw;
-  margin-left: -2.5vw;
+  background-color:black ;
+  padding-top: 1.5vw;
+  height: 29vw;
+  width: 6vw;
+  line-height: 3.9vw;
+  margin-top: -50vw;
+  margin-left: -5vw;
   border-radius: 100px;
+  border: 3px solid white;
+  z-index: 3;
+  animation: color-animation 2s linear infinite;
 }
 
+.feature-color{
+  --color-1: red;
+  --color-2: white;
+}
 
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+
+  52%   {color: var(--color-1)}
+  53%   {color: var(--color-2)}
+
+  99%   {color: var(--color-2)}
+  100%  {color: var(--color-1)}
+}
 
 .flex-container-big {
   display: flex;
   flex-wrap: wrap;
   margin-right: 3vw;
   margin-bottom: 2vw;
-  background-color: white;
+  background-color: black;
   justify-content: flex-end;
   align-items: stretch;
 }
 
 .flex-container-big>.feature {
-  background-color: white;
+  background-color: black;
 }
 
 .flex-container-big>.bg {
-  background-color: white;
+  background-color: black;
 }
 
 .flex-container-big>div {
 
-  background-color: #e2e2e2;
+  background-color: red;
   padding: 5vw;
   font-size: 2vw;
   line-height: 3.5vw;
@@ -91,13 +135,14 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  height: 50vw;
-  margin-top: 6vw;
+  height: 53vw;
+  margin-top: 4vw;
   margin-right: 3vw;
-  background-color: white;
+  background-color: black;
   justify-content: flex-end;
   align-items: stretch;
   z-index: 5;
+
 
 }
 
@@ -105,10 +150,10 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  height: 20vw;
-  margin-top: -9vw;
+  height: 15vw;
+  margin-top: -10vw;
   margin-right: 3vw;
-  background-color: white;
+  background-color: black;
   justify-content: flex-end;
   align-items: stretch;
   z-index: 4;
@@ -120,34 +165,30 @@
   width: 1vw;
   padding-left: 50.2vw;
   padding-right: 10vw;
-  background-color: #e2e2e2;
+  background-color: red;
   justify-content: flex-end;
   align-items: stretch;
 
 }
 
 
-li {
+p {
   position: relative;
   z-index: 6;
+   text-align: left;
+  font-family: 'Special Elite';
 }
 
-.text2 li {
+.text2 p {
   margin-top: 5vw;
 
 }
 
-.text3 li {
+.text3 p {
   margin-top: 10vw;
 }
 
 
-li {
-  list-style-type: none;
-  text-align: left;
-  font-family: 'Special Elite';
-
-}
 
 .title {
   position: absolute;
@@ -156,20 +197,73 @@ li {
   z-index: 6;
   
 }
+.upper{
+  animation: 1s anim-lineUp ease-out ;
+}
 
+.lower{
+  animation: 1.5s anim-lineUp ease-out ;
+ 
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 1;
+    transform: translateX(-80%);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
 .title h1 {
-  font-family: 'Gloock', serif;
-  font-size: 8vw;
+  font-family: 'Climate Crisis';
+  font-weight: 100;
+  font-size: 9vw;
   letter-spacing: 1vw;
-  margin-bottom: -2vw;
-  color: red;
+  margin-bottom: -9vw;
+  -webkit-text-stroke: 3px white;
+  color: rgba(0, 0, 0, 0);
+}
+.title h2 {
+  font-family: 'Climate Crisis';
+  font-weight: 100;
+  font-size: 7.5vw;
+  letter-spacing: 1vw;
+  margin-bottom: 2vw;
+  color: white;
 }
 
 .title p {
   font-family: 'Special Elite';
   font-size: 2.8vw;
-  color: red;
+  color: white;
   line-height: 3vw;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  padding-left: 1vw;
+  margin-top: -2vw;
+  margin-left: -1vw;
+  margin-bottom: -10vw;
+  padding: 0.5vw;
+  width: 100vw;
+  background-color: white;
+  text-align:left;
+  z-index:10
+  ;
+}
+.footer a{
+  font-family: 'Climate Crisis';
+  color: black;
+  font-size: 2vw;
+  text-decoration: none;
+  margin-left: 1vw;
+  
+  
 }
 
 /* [ON BIG SCREEN] */
@@ -177,8 +271,8 @@ li {
 #hamnav {
   width: 101vw;
   position: relative;
-  background: red;
-  z-index: 2;
+  background: white;
+  z-index: 6;
   margin-top: -1vw;
   margin-left: -1vw;
 }
@@ -192,18 +286,17 @@ li {
   flex-grow: 1;
   flex-basis: 0;
   padding: 10px;
-  color: white;
-
-  font-family: 'Special Elite';
+  color: black;
+  font-family: 'Climate Crisis';
   text-decoration: none;
-  padding-top: 1.5vw;
   font-size: 2vw;
   text-align: center;
-  z-index: 2;
+  z-index: 6;
 }
 
 #hamitems a:hover {
   background: black;
+  color: white;
   z-index: 2;
 }
 
@@ -221,41 +314,40 @@ li {
 
   /* (A) BREAK INTO VERTICAL MENU */
   #hamnav {
-    
-    margin-top: -2vw;
+
+    margin-top:-2vw;
     margin-left: -2vw;
     
 
   }
+  
 
   #hamitems a {
-    
     box-sizing: border-box;
     display: block;
     width: 100%;
     font-size: 4vw;
-    border-top: 1px solid white;
+    border-top: 1px solid black;
+    background-color: white;
   }
 
   /* (B) SHOW HAMBURGER ICON */
   #hamnav label {
-    
     display: inline-block;
-    color: white;
-    background: red;
+    color: black;
+    background: white;
     font-style: normal;
     font-size: 7vw;
     padding: 1.4vw;
   }
 
+ 
   /* (C) TOGGLE SHOW/HIDE MENU */
   #hamitems {
-    
     display: none;
   }
 
   #hamnav input:checked~#hamitems {
-    
     display: block;
   }
 
@@ -268,20 +360,22 @@ li {
   }
 
   .flex-container-small>.feature {
-    background-color: white;
+    background-color: black;
   }
 
   .feature p {
 
     font-size: 5vw;
 
-    line-height: 5.7vw;
+    line-height: 6.2vw;
 
-    height: 40vw;
-    width: 7vw;
+    height: 46vw;
+    width: 9vw;
 
-    margin-top: -45vw;
-    margin-left: -4vw;
+    margin-top: -55vw;
+    margin-left: -10vw;
+    border: 2px solid white;
+    z-index:4;
 
   }
 
@@ -290,7 +384,7 @@ li {
     flex-wrap: wrap;
     margin-right: 3vw;
     margin-bottom: 2vw;
-    background-color: white;
+    background-color: black;
     justify-content: flex-end;
     align-items: stretch;
 
@@ -299,7 +393,7 @@ li {
 
   .flex-container-small>div {
 
-    background-color: #e2e2e2;
+    background-color: red;
     padding: 7.3vw;
     font-size: 3vw;
     line-height: 5.5vw;
@@ -309,16 +403,17 @@ li {
     padding-left: 49.5vw;
   }
 
-  .text2 li {
+  .text2 p {
     margin-top: 0vw;
   }
 
   .title h1 {
-
-    font-size: 8vw;
-    line-height: 9vw;
+    margin-top: 10vw;
+    font-size: 9.5vw;
+    line-height: 1vw;
     margin-bottom: -2vw;
-    color: red;
+    -webkit-text-stroke: 2px white;
+    
   }
   .title p {
     
@@ -326,21 +421,28 @@ li {
     line-height: 4vw;
     
   }
+  .banner{
+    height: 316vw;
+  }
   .banner1,
   .banner2 {
 
-    height: 7vw;
+    height: 8vw;
+    width: 700vw;
 
+  }
+  .banner1{
+    margin-top: -1vw;
   }
 
   .banner2 {
-    margin-top: 300vw;
+    margin-top: 344vw;
   }
 
-  .banners p {
+  .banner p {
 
-    margin-top: 2.5vw;
-    font-size: 2vw;
+    margin-top: 1.8vw;
+    font-size: 3vw;
 
   }
 
@@ -350,7 +452,29 @@ li {
   }
 
   .flex-container-small>.bg {
-    background-color: white;
+    background-color: black;
   }
 
+
+  .footer {
+
+    padding-left: 1vw;
+    margin-top: -2vw;
+    margin-left: -1vw;
+    margin-bottom: -10vw;
+    padding: 0.5vw;
+    width: 100vw;
+
+    z-index:10
+    ;
+  }
+  .footer a{
+    font-family: 'Climate Crisis';
+    color: black;
+    font-size: 3.2vw;
+    text-decoration: none;
+    margin-left: 1vw;
+    
+    
+  }
 }
